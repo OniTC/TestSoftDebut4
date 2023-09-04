@@ -22,7 +22,7 @@ namespace TestSoftDebut4.Controllers
 
         public IActionResult Index()
         {
-            List<EmployeeModel> employeeList = _db.Employee.ToList();
+            List<EmployeeModel> employeeList = _db.Employee.ToList() ?? new List<EmployeeModel>();
 
             return View(employeeList);
         }
