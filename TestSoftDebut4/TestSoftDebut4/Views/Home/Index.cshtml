@@ -1,0 +1,8 @@
+﻿@model List<TestSoftDebut4.Models.EmployeeModel>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+<input type="text" name="empName" value="@Model.Select(it => it.EmpName).FirstOrDefault()" />
+</div>
